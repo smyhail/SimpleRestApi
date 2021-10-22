@@ -25,12 +25,12 @@ public class NoteController {
         return noteService.getSingleNote(id);
     }
 
-    @PostMapping("/note")
+    @PostMapping("/notes")
     public Note addNote(@RequestBody Note note){
         return noteService.addNote(note);
     }
 
-    @PutMapping("/note")
+    @PutMapping("/notes")
     public Note editNote(@RequestBody Note note){
         return noteService.editNote(note);
     }
